@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+    <ion-app>
+        <ion-header translucent>
+            <ion-toolbar color="primary">
+                <ion-title>TEC-TOONS</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content fullscreen>
+            <ion-searchbar showCancelButton="focus"></ion-searchbar>
+            <ion-grid>
+
+khj
+                <ion-card>
+                    <ion-card-header color="tertiary">
+                        <ion-card-title>POPULAR</ion-card-title>
+                    </ion-card-header>
+                    <ion-img src="https://i0.wp.com/cinefilosoficial.com/wp-content/uploads/2019/11/17234.jpg?fit=1200%2C800&ssl=1"></ion-img>
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title>RECIENTES</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col size="6">
+                                    <ion-item>
+                                        <ion-img src="https://media.metrolatam.com/2019/08/16/rocketpoweranive-56bfd5613d243916f54b8bd181362942-1200x800.jpg"></ion-img>
+                                    </ion-item>
+                                </ion-col>
+                                <ion-col size="6">
+                                    <ion-item>
+                                        <ion-img src="https://cdn2.actitudfem.com/media/files/styles/big_img/public/images/2012/09/supersonicos.jpg"></ion-img>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col size="6">
+                                    <ion-item>
+                                        <ion-img src="https://e.radio-oxigeno.io/normal/2018/05/28/125412_617552.png"></ion-img>
+                                    </ion-item>
+                                </ion-col>
+                                <ion-col size="6">
+                                    <ion-item>
+                                        <ion-img src="https://static.abc.es/Media/201410/14/cartoons-hd-wallpapers-top--644x362.jpg"></ion-img>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-grid>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Nueva Caricatura</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-item>
+                        <ion-label position="floating">Titulo</ion-label>
+                        <ion-input type="text" id="titulo"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="floating">Year</ion-label>
+                        <ion-input type="number" id="year"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="floating">Genero</ion-label>
+                        <ion-input type="text" id="genero"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="floating">Autores</ion-label>
+                        <ion-input type="text" id="autores"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="floating">Descripcion</ion-label>
+                        <ion-input type="text" id="descripcion"></ion-input>
+                    </ion-item>
+                    <div margin-vertical text-right>
+                            <ion-button id="btn-agregar">
+                                <ion-icon slot="stat" name="add"></ion-icon>
+                            Agregar</ion-button>
+                    </div>
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Caricaturas Agregadas</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-list id="lista">
+                    </ion-list>
+                </ion-card-content>
+            </ion-card>
+        </ion-content>
+    </ion-app>
+    <script src="script.js"></script>
+</body>
+</html>
